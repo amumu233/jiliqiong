@@ -392,6 +392,12 @@
             }
         });
 </script>
+<script>
+	$.get("http://news-at.zhihu.com/api/4/news/latest", function(data){
+  		console.log(data)
+	});
+	
+</script>	
 </head>
 <body>
 	<canvas id="canvas">你的浏览器不支持HTML5画布技术，请使用支持HTML5的浏览器</canvas>
