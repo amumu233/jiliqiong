@@ -394,7 +394,9 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-	$.get("https://news-at.zhihu.com/api/4/news/latest", function(data){
+	$.get("https://news-at.zhihu.com/api/4/news/latest",{
+		xhrFields: 'Access-Control-Allow-Origin': '*'
+	}, function(data){
   		console.log(data)
 	});
 	
